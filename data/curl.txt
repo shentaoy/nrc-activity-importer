@@ -1,0 +1,82 @@
+curl --location --request POST 'https://api.nike.com/plus/v3/activities' \
+--header 'Host: api.nike.com' \
+--header 'content-type: application/json' \
+--header 'appid: com.nike.sport.running.ios' \
+--header 'accept: application/json' \
+--header 'authorization: Bearer eyJhbGciOiJSUzI1NiIsImtpZCI6ImVkZmY4YTAyLWIyZGEtNDhkZC1iOGVjLThhMmM1MGE2YTM0MnNpZyJ9.eyJpYXQiOjE2NjE4OTQyNTYsImV4cCI6MTY2MTg5Nzg1NiwiaXNzIjoib2F1dGgyYWNjIiwianRpIjoiYTViZjJkNjUtZDQxZi00ZDk0LThjYmEtNjFjODQyNzM3YjhjIiwiYXVkIjoiY29tLm5pa2UuZGlnaXRhbCIsInNidCI6Im5pa2U6YXBwIiwidHJ1c3QiOjEwMCwibGF0IjoxNjYxODk0MjU0LCJzY3AiOlsibmlrZS5kaWdpdGFsIl0sInN1YiI6ImNvbS5uaWtlLmNvbW1lcmNlLm5pa2Vkb3Rjb20ud2ViIiwicHJuIjoiNDNiMThkOWItMzE2Ny00Mjg1LWE0N2YtZDcyNzMzZWU2N2NjIiwicHJ0IjoibmlrZTpwbHVzIiwibHJzY3AiOiJvcGVuaWQgbmlrZS5kaWdpdGFsIHByb2ZpbGUgZW1haWwgcGhvbmUgZmxvdyBjb3VudHJ5In0.f8iHaEHOQ_7MUDi8MtYEY8IwnJQ9ngbNHGf5XYU_en-4u0o3t7A90ucDWYloxm3AYOVP5BaiKcuSieDJxOj6gXrMTKzZJkdwSOgHOfQ9xk0_K1sqxpgfdVaN2hF-Rp0pex6fN1wA-IuvP6Klya8FVIK6Sd-UP6gS4hG0uGpFr8hxeaxG8gOAF8TZP-HNxfgcHIgRKz33iXIsVyAMD-26C2nAp11rBte5q9XHkE0aGSiad_4eIs_0myix5Rb88pc6jniaHk-aFHYMf-e_c3eDhmJdyvhemD2Hn3qwmw7SlXFnchOM_1NOkh5uh-C7SrnpK1u78THdLD8tVWx12bYq_g' \
+--header 'accept-charset: utf-8' \
+--header 'nike-api-caller-id: nike:com.nike.sport.running.ios:ios:7.16' \
+--header 'accept-language: en-DE;q=1.0, zh-Hans-DE;q=0.9, de-DE;q=0.8, en-GB;q=0.7' \
+--header 'user-agent: NRC/7.16.0 (prod; 2206282010; iOS 15.5; iPhone9,2)' \
+--data-raw '[
+    {
+        "active_duration_ms": 172210,
+        "app_id": "com.nike.sport.running.ios",
+        "change_tokens": [],
+        "delete_indicator": false,
+        "end_epoch_ms": 1661871028921,
+        "id": "C8C7F68E-4F7E-43B1-B5C2-779A953F0689",
+        "metric_types": [
+            "distance",
+            "speed"
+        ],
+        "metrics": [
+            {
+                "appId": "com.nike.sport.running.ios",
+                "source": "com.nike.running.ios.manualentry",
+                "type": "distance",
+                "unit": "KM",
+                "values": [
+                    {
+                        "end_epoch_ms": 1661871028921,
+                        "start_epoch_ms": 1661870856711,
+                        "value": 1
+                    }
+                ]
+            },
+            {
+                "appId": "com.nike.sport.running.ios",
+                "source": "com.nike.running.ios.manualentry",
+                "type": "speed",
+                "unit": "KMH",
+                "values": [
+                    {
+                        "end_epoch_ms": 1661871028921,
+                        "start_epoch_ms": 1661870856711,
+                        "value": 1
+                    }
+                ]
+            }
+        ],
+        "moments": [],
+        "polylines": [],
+        "session": false,
+        "sources": [
+            "com.nike.running.ios.manualentry"
+        ],
+        "start_epoch_ms": 1661870856711,
+        "summaries": [
+            {
+                "app_id": "com.nike.sport.running.ios",
+                "metric": "speed",
+                "source": "com.nike.activityCapability",
+                "summary": "mean",
+                "value": 1
+            },
+            {
+                "app_id": "com.nike.sport.running.ios",
+                "metric": "distance",
+                "source": "com.nike.activityCapability",
+                "summary": "total",
+                "value": 1
+            }
+        ],
+        "tags": {
+            "com.nike.name": "postman3",
+            "com.nike.running.originalactivityid": "C8C7F68E-4F7E-43B1-B5C2-779A953F0689",
+            "com.nike.running.runtype": "manual",
+            "location": "outdoors"
+        },
+        "type": "run"
+    }
+]'
